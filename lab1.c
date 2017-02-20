@@ -2,7 +2,7 @@
 
 int main()
 {
-	int skok = -1;
+	int srok = -1;
 	int vklad = 1;
 	
 	while ((srok < 0) && (srok <=365)) {
