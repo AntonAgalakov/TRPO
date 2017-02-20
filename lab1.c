@@ -40,4 +40,6 @@ int main()
 		if ((srok > 240) && (srok <=365))
 			vklad = vklad + vklad * 0.12;
 	}
+	printf("Deposit amount = %d", vklad);
+	return 0;
 }
