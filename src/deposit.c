@@ -1,10 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
-	int srok = -1;
-	int vklad = 1;
-	
+void initial_srok_and_vklad (int stok, int vklad) {
 	while ((srok < 0) && (srok <=365)) {
 		printf("Enter the term of the deposit: ");
 		scanf("%d", &srok);
@@ -18,7 +14,9 @@ int main()
 		if (vklad < 10000)
 			printf("\n The data is not correct");
 	}
-	
+}
+
+void rashet(int srok, int vklad) {
 	if (vklad > 100000) {
 		if (srok <= 30)
 			vklad = vklad - vklad *0.1;
@@ -40,6 +38,4 @@ int main()
 		if ((srok > 240) && (srok <=365))
 			vklad = vklad + vklad * 0.12;
 	}
-	printf("Deposit amount = %d", vklad);
-	return 0;
 }
