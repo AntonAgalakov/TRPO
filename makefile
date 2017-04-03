@@ -12,4 +12,4 @@ build/lab1.o:	src/lab1.c
 	gcc -Wall -Werror -c src/lab1.c -o build/lab1.o
 
 clean:
-	rm -rf build/*.o bit/deposit-calc
+	rm -rf build/*.o bin/deposit-calc

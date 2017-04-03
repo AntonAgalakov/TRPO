@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include "deposit.h"
 
-void rashet (int srok, int vklad) {
+void rashet (struct Deposit *dep) {
+	int srok = dep->srok;
+	int vklad = dep->vklad;
 	while ((srok < 0) && (srok <=365)) {
 		printf("Enter the term of the deposit: ");
 		scanf("%d", &srok);

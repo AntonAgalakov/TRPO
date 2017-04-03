@@ -3,9 +3,9 @@
 
 int main()
 {
-	int srok = -1;
-	int vklad = 1;
-	
-	rashet (srok, vklad);
+	struct Deposit dep;
+	dep.srok = -1;
+	dep.vklad = 1;
+	rashet(&dep);
 	return 0;
 }
