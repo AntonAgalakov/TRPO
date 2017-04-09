@@ -3,9 +3,13 @@
 
 int main()
 {
-	struct Deposit dep;
-	dep.srok = -1;
-	dep.vklad = 1;
-	rashet(&dep);
+	int srok, vklad;
+	printf("Input amound: ");
+	scanf("%d", &vklad);
+	printf("Input period: ");
+	scanf("%d", &srok);
+	proverka(srok, vklad);
+	vklad = itog(srok, vklad);
+	printf("Deposit amount = %d", vklad);
 	return 0;
 }
