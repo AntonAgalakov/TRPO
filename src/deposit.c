@@ -19,7 +19,7 @@ int proverka (int srok, int vklad) {
 }
 
 int itog (int srok, int vklad) {
-	if (srok > 0 && srok <=365) {
+	if (srok > 0 && srok <=365 && vklad >9999) {
 		if (vklad >= 100000) {
 			if (srok <= 30)
 				vklad = vklad - vklad *0.1;
