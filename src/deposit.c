@@ -12,7 +12,7 @@ int proverka (int srok, int vklad) {
 	else
 	{
 		printf("\nThe data is not correct (vklad)\n");	
-		if (srok < 0 || srok > 365)
+		if (srok < 0 || srok >= 365)
 			printf("\nThe data is not correct (srok)\n");
 		return -1;
 	}
