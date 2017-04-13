@@ -17,9 +17,9 @@ deposit-test: build/test/main.o build/test/deposit_test.o /build/src/deposit.o
 	gcc build/test/main.o build/test/deposit_test.o build/src/deposit.o -o bin/deposit-test
 
 build/test/lab1.o: test/main.c
-	gcc -I src -I thirdparty/ctest -Wall -Werror -c test/main.c -o build/test/main.o
+	gcc -I thirdparty -I src -Wall -Werror -c test/main.c -o build/test/main.o
 
 build/test/deposit_test.o: test/deposit_test.c
-	gcc -I src -I thirdparty/ctest -Wall -Werror -c test/deposit_test.c -o build/test/deposit_test.o
+	gcc -I thirdparty -I src -Wall -Werror -c test/deposit_test.c -o build/test/deposit_test.o
 clean:
 	rm -rf build/test/*.o build/src/*.o bin/*
