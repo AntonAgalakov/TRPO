@@ -1,2 +1,2 @@
 language: C
-complier: gcc
+compiler: gcc
